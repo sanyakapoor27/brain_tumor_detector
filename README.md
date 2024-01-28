@@ -1,16 +1,8 @@
-# detection_app
+# Brain Tumor Detector App
 
-A new Flutter project.
+This is an app created using flutter to detect brain tumors in MRI scans. A yolov5 model is trained and converted to tflite using ONNX format which is integrated with the flutter app.
 
 ## Getting Started
+![1706341073514](https://github.com/sanyakapoor27/brain_tumor_detector/assets/138278818/da31eaf2-5ccd-4048-af32-4c719653c77d)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+In this project, the ImagePicker plugin is used to create two fuctions for importing images from gallery or clicking them promptly. These functions are integrated with the "Gallery" and "Camera" button. On choosing an image, the yolov5 model is loaded and used to predict the likeliness of the tumor by showing the confidence percentage and display the detected outcome.
